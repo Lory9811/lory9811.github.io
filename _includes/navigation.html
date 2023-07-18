@@ -1,0 +1,11 @@
+<div class="header">
+  <h1 class="title" role="banner">Lory's Blog</h1>
+  <div class="links role="navigation">
+    <span></span>
+    {% for item in site.data.navigation %}
+      <a href="{{ item.url }}" class="{% if page.url == item.url %}active{% endif %}">{{ item.title }}</a>
+    {% endfor %}
+    <span></span>
+  </div>
+</div>
+
